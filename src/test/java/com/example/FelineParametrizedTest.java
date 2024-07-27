@@ -32,22 +32,18 @@ public class FelineParametrizedTest {
 
         Feline feline = new Feline();
 
-        String expectedFoodType = foodType;
-
         String actualFoodType = feline.eatMeat().get(foodId);
 
-        assertEquals(expectedFoodType, actualFoodType);
+        assertEquals(foodType, actualFoodType);
     }
 
     @Test
     public void getKittensReturnSameParam() {
         Feline feline = new Feline();
 
-        int expectedResult = kittensAmount;
-
         int actualResult = feline.getKittens(kittensAmount);
 
-        assertEquals(expectedResult, actualResult);
+        assertEquals(kittensAmount, actualResult);
     }
 }
 
